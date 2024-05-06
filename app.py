@@ -5,7 +5,7 @@
 from openai import OpenAI
 
 # Set up a virtual environment (optional):
-# python -m venv openai-env=
+# python -m venv openai-env
 
 # Activation 
 # Windows: openai-env\Scripts\activate
