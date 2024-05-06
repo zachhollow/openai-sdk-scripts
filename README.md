@@ -3,13 +3,11 @@
 ## Installation
 
 - `pip install openai`
-- `pip install --upgrade openai`
 - `pip install logging`
-- `pip install --upgrade logging`
-
+  
 ## Virtual Environment Setup (Optional)
 
-- `python -m venv openai-env`
+`python -m venv openai-env`
 
 ## Activation
 
@@ -22,5 +20,11 @@ Follow the steps in the Quickstart Guide to set up your API key.
 
 ## Documentation
 
-- OpenAI Documentation: [Link](https://platform.openai.com/docs/introduction)
-- OpenAI API Reference: [Link](https://platform.openai.com/docs/api-reference)
+- OpenAI Documentation: https://platform.openai.com/docs/introduction
+- OpenAI API Reference: https://platform.openai.com/docs/api-reference
+
+## Running the Console App
+
+Open terminal and run the following:
+
+`python app.py` 
