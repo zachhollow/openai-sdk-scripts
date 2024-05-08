@@ -62,3 +62,9 @@ with client.beta.threads.runs.stream(
   event_handler=EventHandler(),
 ) as stream:
   stream.until_done()
+
+image_data = client.files.content("file-abc123")
+image_data_bytes = image_data.read()
+
+with open("./my-image.png", "wb") as file:
+    file.write(image_data_bytes)
