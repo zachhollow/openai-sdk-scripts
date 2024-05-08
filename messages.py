@@ -29,12 +29,6 @@ print("\nMessage ChatGPT...")
 class ExitChatGPTAI(Exception):
    pass
 
-conversation = [
-    {
-        "role": "assistant",
-        "content": "You are a console app run via terminal.",
-    },
-]
 
 def chatgpt(): 
     try:
@@ -42,10 +36,13 @@ def chatgpt():
         if user_input == "EXIT":
             raise ExitChatGPTAI
         else:
-            conversation.append({"role": "user", "content": user_input})     
             stream = client.chat.completions.create(
                 model="gpt-4",
-                messages=conversation,
+
+                messages=[
+                    {"role": "system", "content": "You are a helpful assistant run via a console app in Terminal."},
+                    {"role": "user", "content": user_input}
+                ],
                 temperature=1,
                 max_tokens=256,
                 stream=True,
@@ -57,9 +54,7 @@ def chatgpt():
             # See OpenAI API Reference on Streaming: https://platform.openai.com/docs/api-reference/streaming
             for chunk in stream:
                 if chunk.choices[0].delta.content is not None:
-                    chatgpt_response = chunk.choices[0].delta.content
-                    conversation.append({"role":"assistant", "content": chatgpt_response})
-                    print(chatgpt_response, end="")
+                    print(chunk.choices[0].delta.content, end="")
             print()
     except ExitChatGPTAI:
         logging.info("Exiting ChatGPT.")
