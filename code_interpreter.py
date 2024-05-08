@@ -63,7 +63,8 @@ with client.beta.threads.runs.stream(
 ) as stream:
   stream.until_done()
 
-image_data = client.files.content("file-abc123")
+
+image_data = client.files.content("file-x6YV6lMHUF44eC03mKiVVR56")
 image_data_bytes = image_data.read()
 
 with open("./my-image.png", "wb") as file:
