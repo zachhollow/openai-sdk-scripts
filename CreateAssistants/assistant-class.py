@@ -49,7 +49,8 @@ class Assistant:
             ) as stream:
             stream.until_done()
 
-# First, we create a EventHandler class to define
+# See SDK/API documentation
+# First, create a EventHandler class to define
 # how we want to handle the events in the response stream.
  
 class EventHandler(AssistantEventHandler):    
