@@ -1,4 +1,3 @@
-# TO-DO: Effectively need to add CRUD
 from openai import OpenAI
 client = OpenAI()
 
