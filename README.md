@@ -1,6 +1,10 @@
 # ChatGPT Console App
 
-**Note:** not all scripts are complete is a grid of the scripts that are complete and incomplete.
+For a general-purpose chatbot in Terminal, please see the ```MainConsoleApp``` 
+
+For Assistants intended for data analysis, see the ```CreateAssistants``` folder
+
+For scripts on processing data files and images, please see the ```ProcessFiles``` folder
 
 ## Installation
 
