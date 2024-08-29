@@ -6,6 +6,30 @@ For Assistants intended for data analysis, see the ```CreateAssistants``` folder
 
 For scripts on processing data files and images, please see the ```ProcessFiles``` folder
 
+
+```
+openai-sdk-scripts/
+│
+├── CreateAssistant/
+│   ├── assistant-class.py
+│   ├── code-interpreter.py
+│   ├── digital-assistant.py
+│
+├── MainConsoleApp/
+│   ├── app.py
+│
+├── CreateAssistant/
+│   ├── assistant-class.py
+│   ├── code-interpreter.py
+│   ├── digital-assistant.py
+│
+├── openai-env/
+│
+├── LICENSE
+├── README.md
+```
+
+
 ## Installation
 
 - `pip install openai`
