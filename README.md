@@ -1,11 +1,13 @@
 # ChatGPT Console App
 
+**Note:** not all scripts are complete is a grid of the scripts that are complete and incomplete.
+
 ## Installation
 
 - `pip install openai`
 - `pip install logging`
   
-## Virtual Environment Setup (Optional)
+## Virtual Environment Setup (Optional, but a step I took in this project)
 
 `python -m venv openai-env`
 
